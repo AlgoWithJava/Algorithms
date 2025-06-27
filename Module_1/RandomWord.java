@@ -18,3 +18,7 @@ public class RandomWord {
         StdOut.println(champion);
     }
 }
+
+// How To Run:
+    // javac -cp .:algs4.jar RandomWord.java
+    // java -cp .:algs4.jar RandomWord
