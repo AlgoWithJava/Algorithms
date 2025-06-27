@@ -6,16 +6,15 @@ import edu.princeton.cs.algs4.StdRandom;
 public class RandomWord {
     public static void main(String[] args) {
         System.out.print("Enter some words: ");
-        // String word = StdIn.readString();
-        // System.out.print("Enter your age: ");
-        // int age = StdIn.readInt();
-        // String hidden = StdIn.readLines();
-        // System.out.print("Enter a hidden text: ");
-        // boolean empty = StdIn.isEmpty();
-        // System.out.println(String.format("Welcome %s and your age is %d and its %b", word, age, empty));
+        int i = 1;
+        String champion = null;
         while (!StdIn.isEmpty()) {
-            String value = StdIn.readString();
-            StdOut.println(value);
+            String word = StdIn.readString();
+            if (StdRandom.bernoulli(1.0/i)){
+                champion = word;
+            }
+            i++;
         }
+        StdOut.println(champion);
     }
 }
