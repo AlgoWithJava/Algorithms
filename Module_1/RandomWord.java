@@ -5,9 +5,8 @@ import edu.princeton.cs.algs4.StdRandom;
 
 public class RandomWord {
     public static void main(String[] args) {
-        System.out.print("Enter some words: ");
         int i = 1;
-        String champion = null;
+        String champion = "";
         while (!StdIn.isEmpty()) {
             String word = StdIn.readString();
             if (StdRandom.bernoulli(1.0/i)){
